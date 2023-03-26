@@ -1,0 +1,21 @@
+//Wap to. Reverse digit of a number 
+//Ex 12345
+//Ans. 54321
+
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int num,rem,rev=0;
+    cout << "Enter the number:";
+    cin >> num;
+    while(num!=0){
+      rem=num%10;
+      rev=rev*10+rem;
+      num=num/10;
+    }
+    cout << "Reverse number:" << rev;
+    return 0;
+}
